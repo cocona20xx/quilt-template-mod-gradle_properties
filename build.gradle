@@ -25,7 +25,7 @@ dependencies {
 
 	// QSL is not a complete API; You will need Quilted Fabric API to fill in the gaps.
 	// Quilted Fabric API will automatically pull in the correct QSL version.
-	modImplementation "org.quiltmc.quilted-fabric-api:quilted-fabric-api:${qfapi_version}-${minecraft_version}"
+	modImplementation "org.quiltmc.quilted-fabric-api:quilted-fabric-api:${quilted_fabric_api_version}-${minecraft_version}"
 	// If you want to use QSL by itself over Quilted Fabric API, uncomment the line below (and comment out the line above):
 	// 	modImplementation "org.quiltmc:qsl:${qsl_version}+${minecraft_version}"
 }
