@@ -32,7 +32,7 @@
 			},
 			{
 				"id": "quilted_fabric_api",
-				"versions": ">=7.0.3-"
+				"versions": ">=7.0.6-"
 			}
 		]
 	},
