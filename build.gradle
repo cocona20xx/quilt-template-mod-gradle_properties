@@ -23,8 +23,18 @@ dependencies {
 
 	// QSL is not a complete API; You will need Quilted Fabric API to fill in the gaps.
 	// Quilted Fabric API will automatically pull in the correct QSL version.
+
 	modImplementation "org.quiltmc.quilted-fabric-api:quilted-fabric-api:${quilted_fabric_api_version}-${minecraft_version}"
-	// If you want to use QSL by itself over Quilted Fabric API, uncomment the line below (and comment out the line above):
+
+
+	// Uncomment the line below to allow for the usage of deprecated (Q)FAPI APIs within a mod.
+	// While deprecated FAPI APIs are included within QFAPI's userspace jar, it is not recommended to use them within mods;
+	// These APIs are provided to allow mod authors to port their mod to the newer APIs at their own convenience.
+
+	//modImplementation "org.quiltmc.quilted-fabric-api:quilted-fabric-api-deprecated:${quilted_fabric_api_version}-${minecraft_version}"
+
+	// If you want to use QSL by itself over Quilted Fabric API, uncomment the line below (and comment out the line(s) above):
+
 	// 	modImplementation "org.quiltmc:qsl:${qsl_version}+${minecraft_version}"
 }
 
